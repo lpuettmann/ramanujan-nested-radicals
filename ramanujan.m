@@ -18,9 +18,12 @@ end
 
 figure
 hax = axes;
-plot(val, 'Color', [0.3 0.3 0.3], 'Linewidth', 1.9)
+plot(val, 'Color', [0.3 0.3 0.3], 'Linewidth', 2.1)
 ylim([0, 3.4])
-xlabel('Number of $$N$$', 'Interpreter', 'Latex', 'Fontsize', 16)
-ylabel('Sum of series', 'Interpreter', 'Latex', 'Fontsize', 16)
+xlabel('Number of N', 'Fontsize', 16, 'Fontweight', 'bold')
+ylabel('Sum of series', 'Fontsize', 16, 'Fontweight', 'bold')
 hold on;
-line(get(hax,'XLim'), [3 3], 'Color',[0.5 0.5 0.5], 'Linestyle', '--')
+line(get(hax,'XLim'), [3 3], 'Color',[0.5 0.5 0.5], 'Linestyle', '--', ...
+    'Linewidth', 1.9)
+set(gca, 'FontSize', 16)
+saveas(gcf, 'ramanujan.jpg')
