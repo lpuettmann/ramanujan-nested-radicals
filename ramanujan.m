@@ -47,7 +47,7 @@ plot(t, 'Color', [0.3 0.3 0.3], 'Linewidth', 2.1)
 hold on;
 line(get(hax,'XLim'), [3 3], 'Color',[0.5 0.5 0.5], 'Linestyle', '--', ...
     'Linewidth', 1.9)
-xlabel('k', 'Fontsize', 16, 'Fontweight', 'bold')
+xlabel('s (loop iteration)', 'Fontsize', 16, 'Fontweight', 'bold')
 ylabel('t', 'Fontsize', 16, 'Fontweight', 'bold')
 set(gca, 'FontSize', 16)
 saveas(gcf, 'ramanujan_val.jpg')
