@@ -1,7 +1,7 @@
-function val = iter_sqrt(x, N)
+function val = iter_sqrt(x, n)
 
-if N == 0
+if n == 0
     val = 0;
 else
-    val = sqrt(1 + x*iter_sqrt(x + 1, N - 1));
+    val = sqrt(1 + x*iter_sqrt(x + 1, n - 1));
 end
